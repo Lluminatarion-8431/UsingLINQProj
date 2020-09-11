@@ -48,5 +48,19 @@ namespace LINQ
             Console.WriteLine(averageString);
             Console.ReadLine();
         }
+
+        public void outputtingStringAlphabetically()
+        {
+            string stringName = "Terrill";
+            var newString = stringName.ToUpper().GroupBy(x => x).Select(x => x.Key + "" + x.Count()).OrderBy(x => x).ToArray();
+            StringBuilder newbuilder = new StringBuilder();
+            foreach (string value in newString)
+            {
+                newbuilder.Append(value);
+            }
+            newbuilder.ToString();
+            Console.WriteLine(newbuilder);
+            Console.ReadLine();
+        }
     }
 }

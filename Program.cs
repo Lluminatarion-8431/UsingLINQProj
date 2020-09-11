@@ -10,6 +10,11 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
+            UsingLINQ usingLINQ = new UsingLINQ();
+            usingLINQ.returnWordsWithTH();
+            usingLINQ.chooseDistinctName();
+            usingLINQ.classGradeAverage();
+            usingLINQ.outputtingStringAlphabetically();
         }
     }
 }
